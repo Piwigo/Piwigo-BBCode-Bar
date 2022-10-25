@@ -11,7 +11,7 @@ function bbcode_checktags($str)
 
   for ($pos = 0; $pos<strlen($str); $pos++)
   {
-    if ($str[$pos] == '[')
+    if ($str[$pos] == '[') // [
     {
       $end_pos = strpos($str, ']', $pos);
       $tag = substr($str, ++$pos, $end_pos-$pos);
