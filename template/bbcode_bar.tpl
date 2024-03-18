@@ -61,7 +61,7 @@ BBCodeBar = {strip}{ldelim}
     },
     {/if}
     
-    {if $BBCODE.separators[4]}{counter}{ldelim}separator:'|'},{/if}
+    {if isset($BBCODE.separators[4])}{counter}{ldelim}separator:'|'},{/if}
   ]
 };{/strip}
 
